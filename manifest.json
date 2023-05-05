@@ -1,0 +1,17 @@
+{
+    "short_name": "vdanviel",
+    "name": "Victor Daniel",
+    "icons": [
+      {
+        "src": "img/favicon.png",
+        "type": "image/*",
+        "sizes": "215x215"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#dae1e5",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#006699",
+    "description": "My portfolio site"
+  }

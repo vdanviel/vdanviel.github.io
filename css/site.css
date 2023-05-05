@@ -1,0 +1,33 @@
+/*nunito google font*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+/*greater rounded*/
+.rounded-lgx{
+    border-radius: 16px;
+}
+
+/*gradient font*/
+.gradient-font{
+    /*definindo o gradiente*/
+    background-image: linear-gradient(to right,#80ce08, #006699);
+    /*recorta o background para o texto*/
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    /*tira a cor do texto verdadiera*/
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+/*chancing the color font of flickity*/
+.flickity-button.previous, .flickity-button.next{
+    background: #dae1e5;
+}
+
+/* hide the arrows when the screen width is 400px or less */
+@media (max-width: 788px) {
+    .flickity-button.previous, .flickity-button.next {
+      display: none;
+    }
+}
