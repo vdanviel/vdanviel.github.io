@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  <!--tailwindcss-->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--site css-->
+  <link rel="stylesheet" href="css/site.css">
+  <!--flickity css-->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <title>Victor Daniel</title>
+</head>
+<body class="bg-[#dae1e5] font-[Nunito]">
+
+    <header class="mb-[90px] lg:mb-[150px]">
+
+        <!--nav bar begin-->
+        <nav class="mt-[25px] mx-auto w-[92%] h-auto text-[#242424]">
+
+          <!--inline nav-->
+          <div class="flex justify-end justify-between items-center">
+            <!--my logo-->
+            <a href="/"><img class="w-[110px] lg:w-[135px]" src="img/logo.png" alt="logo"></a>
+
+            <!--mobile menu-->
+            <button onclick="menu(this)" name="open" class="lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                <path id="svg-mobile" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+
+            <!--desktop (or greater width) links-->
+            <div class="hidden lg:flex items-center">
+              <a href="https://drive.google.com/file/d/1qS9iI5NoyG8dvtZSO5VR2y5TD0BSuj_p/view?usp=sharing" target="_blank" class="p-[14px]">Visualize meu currículo</a>
+              <a href="mailto:victordn.araujo@gmail.com" class="border-4 border-[#006699] rounded-full p-[10px]">Fale comigo</a>
+            </div>
+
+          </div>
+
+          <!---mobile links-->
+          <div id='mobile-links' class="text-center mt-12 hidden lg:hidden">
+            <div class="grid gap-[10px] place-items-center">
+              <a href="mailto:victordn.araujo@gmail.com" class="border-4 border-[#006699] rounded-full w-fit p-3">Fale comigo</a>
+              <a href="https://drive.google.com/file/d/1qS9iI5NoyG8dvtZSO5VR2y5TD0BSuj_p/view?usp=sharing" target="_blank" class="w-fit p-[17px]">Visualize meu currículo</a>
+            </div>
+          </div>
+
+
+        </nav>
+
+    </header>
+
+    <!--content of the site-->
+    <main>
+          
+          <!--hello-->
+          <h1 class="text-[#80ce08] text-[32px] text-center mb-[144px] lg:mb-[250px] lg:text-[50px]">Olá visitante!</h1>
+      
+          <!--wallpaper-->
+          <div class="mx-auto mb-[40px] w-[95%] bg-white rounded-3xl pb-6 shadow-lg shadow-slate-200 text-[#242424]">
+      
+            <!--presentation-->
+            <div class="px-6 mb-[40px]">
+      
+              <!--avatar-->
+              <div class="flex justify-center h-[180px] lg:h-[200px] lg:mb-[100px] relative">
+                  <img class="object-cover w-[232px] h-[258px] -translate-y-[120px] lg:w-[380px] lg:h-[400px] lg:-translate-y-[190px]" src="img/avatar.png" alt="me?">
+              </div>
+      
+              <!--preseting-->
+              <div>
+                <p class="text-[#006699] text-[30px] lg:text-[52px] text-center">Desenvolvedor <bla class="gradient-font">back-end</bla> & <bla class="gradient-font">front-end</bla></p>
+      
+                <p class="text-center px-10 lg:text-[30px] mb-5">
+                  Eu sou o Victor Daniel, um Junior no mundo do desenvolvimento de aplicações com experiências didáticas e profissionais. Eu gosto do que faço.
+                </p>
+      
+                <!--social links-->
+                <div class="inline-flex justify-center w-full">
+                  <a target="_blank" href="https://wa.me/+5511997817780"><img class="mx-[5px] w-[40px] lg:mx-[10px] lg:w-[55px]" src="img/whatsapp.png" alt="whatsapp"></a>
+                  <a target="_blank" href="https://github.com/vdanviel"><img class="mx-[5px] w-[40px] lg:mx-[10px] lg:w-[55px]" src="img/github.png" alt="github"></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/victor-daniel-b0a5a4214/"><img class="mx-[5px] w-[40px] lg:mx-[10px] lg:w-[55px]" src="img/linkedin.png" alt="linkedin"></a>
+                  <a target="_blank" href="https://www.instagram.com/vdanviel"><img class="mx-[5px] w-[40px] lg:mx-[10px] lg:w-[55px]" src="img/instagram.png" alt="instagram"></a>
+                </div>
+              </div>
+      
+            </div>
+      
+            <!--about me-->
+            <div class="px-6 mb-[40px]">
+      
+              <div style="text-align: -webkit-center;" class="lg:flex lg:w-[92%] lg:mx-auto">
+                <img class="w-[200px] place-self-center mb-6 lg:mb-0 lg:w-[350px] rounded-lg" src="img/minha-foto.png" alt="victor">
+                
+                <script async src="//www.instagram.com/embed.js"></script>
+                <div class="lg:place-self-center lg:w-[100%] lg:ml-6">
+                  <p class="mx-5 lg:mx-0 text-[13px] lg:text-[22px] lg:mx-[50px]">Este sou eu. Eu comecei minha jornada na programação depois de ter terminado um curso Técnico no Senac. Desde lá tenho feito cursos e praticado programação em variadas linguagens. Depois de muito aprendizado eu tomei o PHP como minha tecnologia principal, mas ser limitado a isso. Estou a procura da minha primeira oportunidade como Desenvolvedor Junior. Espero poder evoluir e produzir com você e sua equipe! &#129395;</p>
+                </div>
+              </div>
+      
+            </div>
+            
+            <!--stacks-->
+            <div class="px-6 mb-[40px]">
+              <!--tittle-->
+              <h1 class="text-[#006699] text-[25px] text-center mb-[20px] lg:text-[40px]">Meu Stack <bla class="gradient-font">(mas não limitado a isso)</bla></h1>
+      
+              <!--stacks-->
+              <div class="bg-[#dae1e5] rounded-3xl text-center p-6 lg:mx-[100px]">
+      
+                <div style="text-align: -webkit-center;" class="flex flex-col w-full md:space-between p-5">
+      
+                  <div class="my-3">
+                    <img width="80px" src="img/laravel.png" alt="laravel">
+                    <p class="lg:text-[22px] mt-4">Laravel. Tenho usado muito ultimamente. Um dos mais poderosos frameworks PHP.</p>
+                  </div>
+      
+                  <div class="my-3">
+                    <img width="80px" src="img/php.png" alt="php">
+                    <p class="lg:text-[22px] mt-4">PHP puro. Apesar dos frameworks sempre há funções vannilas utilizadas nas aplicações.</p>
+                  </div>
+      
+                  <div class="my-3">
+                    <img width="80px" src="img/tailwind.png" alt="tailwind">
+                    <p class="lg:text-[22px] mt-4">TailwindCSS. Uma famosa library de CSS muito útil. O trabalho é reduzido drasticamente, e não há necessidade de sair da página de edição do HTML. É uma ótima combinação com Laravel. <bla class="gradient-font">Esta aplicação foi feita em TailwindCSS.</bla> </p>
+                  </div>
+      
+                  <div class="my-3">
+                    <img width="80px" src="img/bootstrap.png" alt="bootstrap">
+                    <p class="lg:text-[22px] mt-4">Bootstrap. Outra famosa library front-end, mas comporta não somente o CSS mas também funções DOM em Javascript.</p>
+                  </div>
+      
+                  <div class="my-3">
+                    <img width="80px" src="img/database.png" alt="slq">
+                    <p class="lg:text-[22px] mt-4">Tenho conhecimento em banco de dados em SQL. A DBMS que eu mais utilizo é o PHPMyAdmin, mas também utilizo outros.</p>
+                  </div>
+      
+                </div>
+                
+              </div>
+      
+      
+            </div>
+      
+            <!--my projects-->
+            <div class="mb-14">
+      
+              <!--tittle-->
+              <div class="flex items-center justify-center mb-3 px-6">
+                <h1 class="text-[#006699] text-[25px] text-center mb-[20px] lg:text-[40px] mr-5">Alguns projetos...</h1>
+                <img src="img/projects.png" width="90" alt="projects">
+              </div>
+      
+              <!--explanation-->
+              <p class="text-center mb-5 lg:mb-12 lg:px-12 lg:text-[20px] px-6">Quero mostrar um pouco das minhas experiências. É bom destacar que eu optei por deixar os links dos <i>repositórios destes projetos.</i> Ou seja, é importante você <a class="text-[#006699]" href="https://github.com/vdanviel" target="_blank">acessar meu github</a> se você quiser mais detalhes sobre minhas habilidades como programador.</p>
+              <!--projects-->
+              <div class="projects w-full">
+      
+                    <!--cell winpro-->
+                    <div class="flex justify-center flex-col w-[65%] md:w-[50%] m-5 h-auto ">
+      
+                        <div class="flex items-center justify-center bg-[#373f78] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
+                          <a class="grid items-center justify-items-center" target="_blank" href="https://github.com/vdanviel/winprodigital">
+                            <img class="px-10 md:px-1 md:py-10 w-[90%] md:w-[50%]" src="img/previews/winpro.png" alt="winprodigital">
+                          </a>
+                        </div>
+      
+                      <!--description-->
+                      <div class="hidden md:block bg-[#dae1e5] rounded-3xl mt-2 p-5">
+      
+                        <a class="inline-flex items-center md:text-[16px]" target="_blank" href="https://github.com/vdanviel/winprodigital">
+                          <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                          </svg>
+                          vdanviel/winprodigital
+                        </a>
+      
+                        <p class="md:text-[16px]">Este projeto é um site apresentativo de uma start-up de marketing digital.</p>
+                      </div>
+      
+                    </div>
+      
+                    <!--cell jstests-->
+                    <div class="flex justify-center flex-col w-[65%] md:w-[50%] m-5 h-auto ">
+      
+                        <div class="flex items-center justify-center bg-[#fbf31d] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
+                          <a class="grid items-center justify-items-center" target="_blank" href="https://github.com/vdanviel/js-tests">
+                            <img class="px-10 md:px-1 md:py-10 w-[100%] md:w-[65%]" src="img/previews/js-tests.png" alt="winprodigital">
+                          </a>
+                        </div>
+      
+                      <!--description-->
+                      <div class="hidden md:block bg-[#dae1e5] rounded-3xl mt-2 p-5">
+      
+                        <a class="inline-flex items-center md:text-[16px]" target="_blank" href="https://github.com/vdanviel/js-tests">
+                          <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                          </svg>
+                          vdanviel/js-tests
+                        </a>
+      
+                        <p class="md:text-[16px]">Este projeto tem vários testes em Javascript, em DOM.</p>
+                      </div>
+      
+                    </div>
+      
+                    <!--cell stufeshop-->
+                    <div class="flex justify-center flex-col w-[65%] md:w-[50%] m-5 h-auto ">
+      
+                        <div class="flex items-center justify-center bg-[#214c81] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
+                          <a class="grid items-center justify-items-center" target="_blank" href="https://github.com/vdanviel/ecommerce">
+                            <img class="px-10 md:px-1 md:py-10 w-[90%] md:w-[50%]" src="img/previews/stufeshop.png" alt="winprodigital">
+                          </a>
+                        </div>
+      
+                      <!--description-->
+                      <div class="hidden md:block bg-[#dae1e5] rounded-3xl mt-2 p-5">
+      
+                        <a class="inline-flex items-center md:text-[16px]" target="_blank" href="https://github.com/vdanviel/ecommerce">
+                          <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                          </svg>
+                          vdanviel/ecommerce
+                        </a>
+      
+                        <p class="md:text-[16px]">Projeto didático. Um e-commerce feito em PHP puro, Bootstrap e outras libraries e mini frameworks.</p>
+                      </div>
+      
+                    </div>
+      
+                    <!--cell somepractice-->
+                    <div class="flex justify-center flex-col w-[65%] md:w-[50%] m-5 h-auto ">
+      
+                        <div class="flex items-center justify-center bg-[#f8f9fa] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
+                          <a class="grid items-center justify-items-center" target="_blank" href="https://github.com/vdanviel/laravel-practice">
+                            <img class="px-2 md:px-1 md:py-10 w-[90%] md:w-[65%]" src="img/previews/some-practice.png" alt="winprodigital">
+                          </a>
+                        </div>
+      
+                      <!--description-->
+                      <div class="hidden md:block bg-[#dae1e5] rounded-3xl mt-2 p-5">
+      
+                        <a class="inline-flex items-center md:text-[16px]" target="_blank" href="https://github.com/vdanviel/laravel-practice">
+                          <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                          </svg>
+                          vdanviel/laravel-practice
+                        </a>
+      
+                        <p class="md:text-[16px]">Projeto prático. Eu fiz esse projeto para praticar o Laravel e suas funcionalidades. Um e-commerce com o front-end feito em Bootstrap e com funcionalidades de pagamentos do <a class="text-[#006699]" target="_blank" href="https://stripe.com/">Stripe</a>.</p>
+                      </div>
+      
+                    </div>
+      
+              </div>
+      
+            </div>
+      
+            <!--addicional info-->
+            <div class="px-6 mb-[40px]">
+      
+              <!--tittle-->
+              <h1 class="text-[#006699] text-[25px] text-center mb-[20px] lg:text-[40px]">Informações Adicionais</h1>
+      
+              <!--infos-->
+              <div class="bg-[#dae1e5] rounded-3xl text-center p-6 lg:mx-[150px]">
+      
+                <div class="flex flex-col w-full md:space-between lg:p-5 text-[#006699]">
+      
+                  <!--english-->
+                  <div class="flex flex-col lg:inline-flex lg:flex-row flex-nowrap items-center my-[20px]">
+                    <div class="grid justify-center items-center mb-4 lg:mb-0 lg:mr-5 bg-white rounded-full w-[100px] h-[100px] p-5">
+                      <img class="w-[50px] " src="img/speak.png" alt="laravel">
+                    </div>
+                    <p class="text-center lg:text-left lg:text-[22px]">Inglês Avançado</p>
+                  </div>
+      
+                  <!--computing repair-->
+                  <div class="flex flex-col lg:inline-flex lg:flex-row flex-nowrap items-center my-[20px]">
+                    <div class="grid justify-center items-center mb-4 lg:mb-0 lg:mr-5 bg-white rounded-full w-[100px] h-[100px] p-5">
+                      <img class="w-[50px] " src="img/computing-repair.png" alt="php">
+                    </div>
+                    <p class="text-center lg:text-left lg:text-[22px]">Manutenção de Computadores</p>
+                  </div>
+      
+                  <!--grafic design-->
+                  <div class="flex flex-col lg:inline-flex lg:flex-row flex-nowrap items-center my-[20px]">
+                    <div class="grid justify-center items-center mb-4 lg:mb-0 lg:mr-5 bg-white rounded-full w-[100px] h-[100px] p-5">
+                      <img class="w-[50px] " src="img/web-design.png" alt="tailwind">
+                    </div>
+                    <p class="text-center lg:text-left lg:text-[22px]">Design Gráfico / Web Design</p>
+                  </div>
+      
+                  <!--soft skills-->
+                  <div class="flex flex-col lg:inline-flex lg:flex-row flex-nowrap items-center my-[20px]">
+                    <div class="grid justify-center items-center mb-4 lg:mb-0 lg:mr-5 bg-white rounded-full w-[100px] h-[100px] p-5">
+                      <img class="w-[50px] " src="img/abilities.png" alt="tailwind">
+                    </div>
+                    <p class="text-center lg:text-left lg:text-[22px]">Bom trabalho em equipe / Facilidade em aprender</p>
+                  </div>
+      
+                </div>
+                
+              </div>
+      
+            </div>
+      
+            <!--talk to me / download resume-->
+            <div class="m-3">
+      
+              <div class="flex justify-center">
+                <!--talk to me-->
+                <div class="shadow-none hover:shadow-2xl w-[40%] p-5 rounded-3xl self-center">
+                  <a class="flex items-center flex-col" target="_blank" href="mailto:victordn.araujo@gmail.com">
+                    <img class="w-[52px] lg:w-[80px] mb-3" src="img/messenger.png" alt="mandar-email">
+                    <p class="text-center text-[#006699]">Se você ter alguma dúvida, me mande um email!</p>
+                  </a>
+                </div>
+      
+                <!--see resume-->
+                <div class="shadow-none hover:shadow-2xl w-[40%] p-5 rounded-3xl self-center	">
+                  <a class="flex items-center flex-col" target="_blank" href="https://drive.google.com/file/d/1qS9iI5NoyG8dvtZSO5VR2y5TD0BSuj_p/view?usp=sharing">
+                    <img class="w-[52px] lg:w-[80px] mb-3" src="img/resume.png" alt="baixar-currículo">
+                    <p class="text-center text-[#006699]">Quer mais detalhes? Visualize meu currículo.</p>
+                  </a>
+                </div>
+              </div>
+      
+            </div>
+      
+            <!--footer-->
+            <div class="text-center">
+              <p class="text-[#dae1e5]">danviel © 2023</p>
+            </div>
+      
+          </div>
+    </main>
+
+    <!--flickity js-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--js carrousel-->
+    <script src="js/carrousel.js"></script>
+    <!--js mobile menu-->
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>
