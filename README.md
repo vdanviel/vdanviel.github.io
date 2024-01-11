@@ -2,4 +2,4 @@
 
 ## About My Portfolio
 
-My porfolio was made to introduce myself as a fullstack developer to the people. I created it with [TailwindCSS](https://tailwindcss.com/) and the [Flickity Library](https://flickity.metafizzy.co/)
+My porfolio was made to introduce myself as a fullstack developer to the people. I created it with [TailwindCSS](https://tailwindcss.com/) and the [Flickity Library](https://flickity.metafizzy.co/).
