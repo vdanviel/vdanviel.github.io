@@ -20,6 +20,15 @@
     text-fill-color: transparent;
 }
 
+.tech-icon img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-icon img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
 /*chancing the color font of flickity*/
 .flickity-button.previous, .flickity-button.next{
     background: #dae1e5;
