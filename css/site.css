@@ -40,3 +40,17 @@
       display: none;
     }
 }
+
+/*center carrousel cells*/
+.works .flickity-slider {
+    display: flex !important;
+    align-items: start !important;
+}
+
+.works .carousel-cell {
+    /* Exemplo: Se precisar que o conteúdo da célula também seja centralizado */
+    height: 100%; 
+    display: flex;
+    justify-content: center !important; /* Centraliza conteúdo horizontalmente na célula */
+    align-items: center !important; /* Centraliza conteúdo verticalmente na célula */
+}
