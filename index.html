@@ -27,6 +27,25 @@
   gtag('config', 'G-D2YNY3SEDY');
 </script>
 
+<!-- modal para midias -->
+<div id="mediaModal" class="fixed inset-0 bg-white z-40 flex flex-col shadow-2xl overflow-hidden hidden">
+    
+    <button onclick="closeMediaModal()" class="absolute top-6 right-6 z-50 w-10 h-10 flex items-center justify-center bg-[#dae1e5] rounded-full pointer">
+        <span class="text-2xl">&times;</span>
+    </button>
+
+    <div class="flex-1 overflow-y-auto p-6 md:p-10 custom-scrollbar mt-12 lg:mt-10">
+        
+        <div id="mediaList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- midia aqui... -->
+
+        </div>
+
+    </div>
+
+</div>
+
 <body class="bg-[#dae1e5] font-[Nunito]">
 
     <header class="mb-[90px] lg:mb-[150px]">
@@ -88,7 +107,7 @@
                 <p class="text-[#006699] text-[30px] lg:text-[52px] text-center">Desenvolvedor de software <bla class="gradient-font">fullstack</bla></p>
       
                 <p class="text-center px-10 lg:text-[30px] mb-5">
-                  Eu sou o Victor, um Engenheiro de Software. Eu amo oque faço.
+                  Eu sou o Victor, um Desenvolvedor de Software. Eu amo oque faço.
                 </p>
       
                 <!--social links-->
@@ -124,7 +143,7 @@
             <div class="px-6 mb-[40px] flex flex-col justify-center items-center">
 
               <h1 class="text-[#006699] text-[25px] text-center lg:text-[40px] font-semibold">
-                Stack principal <span class="gradient-font">/ domínio técnico</span>
+                Minha stack <span class="gradient-font">principal</span>
               </h1>
 
               <div class="w-[90%] lg:w-auto flex flex-col items-center">
@@ -139,17 +158,25 @@
                 </div>
 
                 <h2 class="text-[#006699] text-[25px] text-center lg:text-[20px] font-semibold mt-10 mb-5">
-                  Domínio complementar <span class="gradient-font">& ecossistema</span> 
+                  Domínio nas linguagens <span class="gradient-font">/ ferramentas / frameworks</span> 
                 </h2>
 
                 <div class="flex flex-wrap justify-center gap-3 max-w-[100%] lg:max-w-[600px]">
 
                   <div class="tech-icon">
-                    <img class="w-[75px] lg:w-[85px] p-2 rounded-lg shadow" alt="laravel" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg">
+                    <img class="w-[75px] lg:w-[85px] p-2 rounded-lg shadow" alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg">
                   </div>
 
                   <div class="tech-icon">
                     <img class="w-[75px] lg:w-[85px] p-2 rounded-lg shadow" alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
+                  </div>
+                  
+                  <div class="tech-icon">
+                    <img class="w-[75px] lg:w-[85px] p-2 rounded-lg shadow" alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg">
+                  </div>
+
+                  <div class="tech-icon">
+                    <img class="w-[75px] lg:w-[85px] p-2 rounded-lg shadow" alt="laravel" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg">
                   </div>
 
                   <div class="tech-icon">
@@ -188,15 +215,146 @@
                     <img class="w-[75px] lg:w-[85px] p-2 rounded-lg shadow" alt="linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-plain.svg">
                   </div>
 
+                  <div class="tech-icon">
+                    <img class="w-[75px] lg:w-[85px] p-2 rounded-lg shadow" alt="git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
+                  </div>
+
                 </div>
 
               </div>
+            </div>
+
+            <!-- my carrer -->
+            <div class="flex flex-wrap flex-col justify-center gap-3">
+
+              <!--title-->
+              <div class="flex items-center justify-center px-6">
+                <h1 class="text-[#006699] text-[25px] text-center lg:text-[40px] mr-5">Minhas experiências...</h1>
+                <img class="w-[78px]" src="img/suitcase.png" width="90" alt="projects">
+              </div>
+
+              <!--explanation-->
+              <p class="text-center lg:mb-5 lg:px-12 lg:text-[20px] px-6">Essas são as experiências profissionais em minha trajetória.</p>
+
+              <!-- hermanos -->
+              <div class="flex justify-center items-center flex-col p-5">
+
+                <img class="w-[100px] lg:w-[180px]" src="img/logo-hermanos-assinatura2-min.webp" alt="hermanos-logo">
+
+                <div class="flex flex-col items-center justify-center mt-2">
+                  <span class="text-sm lg:text-lg font-semibold italic">Desenvolvedor back-end</span>
+                  <span class="text-sm lg:text-lg font-semibold flex flex-row gap-2">
+                    <p>Início: Outubro/2024</p>
+                    <p>Fim: Abril/2026</p>
+                  </span>
+                </div>
+                
+                <ul class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-4 text-xs text-center lg:text-sm font-semibold list-disc list-inside lg:max-w-[830px]">
+                  <li class="rounded-full">
+                    Modelagem e implementação de banco de dados relacionais
+                  </li>
+                  <li class="rounded-full">
+                    Correção de bugs, solução de problemas voltado aos clientes
+                  </li>
+                  <li class="rounded-full">
+                    Reuniões de alinhamento com stakeholders
+                  </li>
+                  <li class="rounded-full">
+                    Integração com o gateway de pagamento Celcash, Vindi e Safrapay
+                  </li>
+                </ul>
+
+                <div class="flex flex-wrap justify-center items-center">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="php">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="js">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="git">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="node.js">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" alt="docker">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-plain.svg" alt="linux">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="mysql">
+                </div>
+
+              </div>
+
+              <!-- flipnet -->
+              <div class="flex justify-center items-center flex-col p-5">
+
+                <img class="w-[100px] lg:w-[180px]" src="img/flipnet_logo.png" alt="flipnet-logo">
+
+                <div class="flex flex-col items-center justify-center mt-2">
+                  <span class="text-sm lg:text-lg font-semibold italic">Suporte de Sistemas</span>
+                  <span class="text-sm lg:text-lg font-semibold flex flex-row gap-2">
+                    <p>Início: Setembro/2024</p>
+                    <p>Fim: Abril/2025</p>
+                  </span>
+                </div>
+                
+                <ul class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-4 text-xs text-center lg:text-sm font-semibold list-disc list-inside lg:max-w-[830px]">
+                  <li class="rounded-full">
+                    Correção de bugs
+                  </li>
+                  <li class="rounded-full">
+                    Atendimentos de chamados para parceiros e clientes
+                  </li>
+                  <li class="rounded-full">
+                    Reuniões Daily Scrum
+                  </li>
+                  <li class="rounded-full">
+                    Operações DQL, DML, DDL no banco de dados
+                  </li>
+                </ul>
+
+                <div class="flex flex-wrap justify-center items-center">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="php">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="js">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="git">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" alt="docker">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-plain.svg" alt="linux">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="mysql">
+                </div>
+
+              </div>
+
+              <!-- asobr -->
+              <div class="flex justify-center items-center flex-col p-5">
+
+                <img class="w-[100px] lg:w-[180px]" src="img/aso-logo.png" alt="aso-logo">
+                
+                <div class="flex flex-col items-center justify-center mt-2">
+                  <span class="text-sm lg:text-lg font-semibold italic">Desenvolvedor back-end</span>
+                  <span class="text-sm lg:text-lg font-semibold flex flex-row gap-2">
+                    <p>Início: Junho/2023</p>
+                    <p>Fim: Abril/2024</p>
+                  </span>
+                </div>
+
+                <ul class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-4 text-xs text-center lg:text-sm font-semibold list-disc list-inside lg:max-w-[830px]">
+                  <li class="rounded-full">
+                    Desenvolvimento de API e versionamento
+                  </li>
+                  <li class="rounded-full">
+                    Reuniões de alinhamento com stakeholders
+                  </li>
+                  <li class="rounded-full">
+                    Integração com o gateway de pagamento ASAAS
+                  </li>
+                </ul>
+
+                <div class="flex flex-wrap justify-center items-center">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="php">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="js">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="git">
+                  <img class="w-[40px] lg:w-[55px] p-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="mysql">
+                </div>
+
+              </div>
+
             </div>
       
             <!--my projects-->
             <div class="mb-14">
       
-              <!--tittle-->
+              <!--title-->
               <div class="flex items-center justify-center mb-3 px-6">
                 <h1 class="text-[#006699] text-[25px] text-center mb-[20px] lg:text-[40px] mr-5">Alguns projetos...</h1>
                 <img src="img/projects.png" width="90" alt="projects">
@@ -207,51 +365,173 @@
 
               <!--projects-->
               <div class="projects w-full">
-  
-                <!-- hermanos -->
+
+                <!--vivatshirt-->
                 <div class="flex justify-center flex-col w-[65%] md:w-[50%] m-5 h-auto ">
 
                     <!--image-->
-                    <div class="flex items-center justify-center bg-[#f3f3f3] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
-                      <a class="grid items-center justify-items-center" target="_blank" href="https://barbeariahermanos.com.br/checkout?plan=infinite-duos">
-                        <img class="w-[200px] lg:w-[250px]" src="img/logo-hermanos-assinatura2-min.webp" alt="logo-hermanos">
+                    <div class="relative flex items-center justify-center bg-[#b78bc8] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
+                            
+                      <button onclick="openMediaModal(['img/projects/vivatshirt/home.jpeg', 'img/projects/vivatshirt/product.jpeg', 'img/projects/vivatshirt/profile.jpeg', 'img/projects/vivatshirt/signin.jpeg', 'img/projects/vivatshirt/signup.jpeg'])" class="absolute bottom-4 left-4 w-12 h-12 flex items-center justify-center bg-[#dae1e5] rounded-full shadow-lg z-10">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
+                              <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                          </svg>
+                      </button>
+
+                      <a class="grid items-center justify-items-center" target="_blank" href="https://github.com/orgs/VivaTShirt/repositories">
+                          <h1 class="text-[80px] lg:text-[115px] text-white">Vts</h1>
                       </a>
                     </div>
   
                   <!--description-->
                   <div class="hidden md:block bg-[#dae1e5] rounded-3xl mt-2 p-5">
   
-                    <a class="inline-flex items-center md:text-[16px] gap-[5px]" target="_blank" href="https://barbeariahermanos.com.br/checkout?plan=infinite-duos">
-                      <img class="w-[18px]" src="img/hermanos-logo.png" >
-                      checkout p/ assinaturas
+                    <a class="inline-flex items-center md:text-[16px]" target="_blank" href="https://github.com/orgs/VivaTShirt/repositories">
+                      <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                      VivaTShirt/repositories
                     </a>
-
-                    <p class="md:text-[16px]">Sistema de checkout de alta escalabilidade utilizando PHP e JavaScript, focado em total autonomia de negócio. A solução é 100% dinâmica, adaptando interface e lógica automaticamente a qualquer número de planos sem alterações no código. O projeto inclui integração completa com a API da Vindi para recorrência, validação de dados em tempo real (CPF/Cartão), proteção via reCAPTCHA e um fluxo de contrato de adesão digital para garantir segurança jurídica e reduzir o abandono.</p>
-                    
+  
+                    <p class="md:text-[16px]">A VivaTShirt é uma plataforma de e-commerce especializada no setor de vestuário, desenvolvida com uma arquitetura moderna em Node.js no backend e uma interface responsiva em HTML5 e CSS3 (Tailwind). O diferencial estratégico do projeto é sua integração nativa com a API da Shopee, permitindo que o cliente gerencie estoque, pedidos e sincronização de produtos de forma centralizada. Utilizando o banco de dados MySQL para garantir a integridade das transações e o gerenciamento de clientes, a aplicação oferece um fluxo de venda otimizado, unindo a autonomia de uma loja própria com a visibilidade de um dos maiores marketplaces do mercado.</p>
                   </div>
   
                 </div>
-                
-                <!-- asoclin -->
+
+                <!-- srp -->
                 <div class="flex justify-center flex-col w-[65%] md:w-[50%] m-5 h-auto ">
 
-                  <!--image-->
-                  <div class="flex items-center justify-center bg-[#ffffff] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
-                    <a class="grid items-center justify-items-center" target="_blank" href="https://app.asosistemas.com.br/login/">
-                      <img class="w-[200px] lg:w-[250px]" src="img/asoclin-logo.png" alt="logo-aso">
-                    </a>
-                  </div>
+                    <!--image-->
+                    <div class="relative flex items-center justify-center bg-[#0e9fe6] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
+                            
+                      <button onclick="openMediaModal(['img/projects/srp/img_srp.png'])" class="absolute bottom-4 left-4 w-12 h-12 flex items-center justify-center bg-[#dae1e5] rounded-full shadow-lg z-10">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
+                              <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                          </svg>
+                      </button>
 
+                      <a class="grid items-center justify-items-center" target="_blank" href="https://github.com/orgs/Projeto-Interdisciplar-SRP/repositories">
+                          <h1 class="text-[80px] lg:text-[115px] text-white">Srp</h1>
+                      </a>
+                    </div>
+  
                   <!--description-->
                   <div class="hidden md:block bg-[#dae1e5] rounded-3xl mt-2 p-5">
   
-                    <a class="inline-flex items-center md:text-[16px] gap-[5px]" target="_blank" href="https://app.asosistemas.com.br/login/">
-                      <img class="w-[30px]" src="img/aso-logo.png" >
-                      portal do colaborador / gestão de SST e RH
+                    <a class="inline-flex items-center md:text-[16px]" target="_blank" href="https://github.com/orgs/Projeto-Interdisciplar-SRP/repositories">
+                      <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                      Projeto-Interdisciplar-SRP/repositories
                     </a>
+  
+                    <p class="md:text-[16px]">"Sistema de Reservas para Paróquias", desenvolvimento de um sistema web completo para gestão de viagens paroquiais, incluindo controle de ônibus, reservas de assentos e acompanhamento das viagens. A solução foi projetada com foco em usabilidade e organização operacional.</p>
+                  </div>
+  
+                </div>
 
-                    <p class="md:text-[16px]">Sistema centralizado para gestão de Segurança e Saúde Ocupacional e Recursos Humanos, focado na autonomia do funcionário e desburocratização de processos. A plataforma é 100% responsiva, permitindo que o colaborador gerencie toda sua vida profissional em um único ambiente. O projeto inclui funcionalidades de ponto eletrônico geolocalizado, acesso dinâmico a holerites, gestão de documentos de SST (ASO/Exames) e assinatura digital, garantindo conformidade com o eSocial e segurança jurídica para a empresa.</p>
-                    
+                <!-- greenpeace -->
+                <div class="flex justify-center flex-col w-[65%] md:w-[50%] m-5 h-auto ">
+
+                    <!--image-->
+                    <div class="relative flex items-center justify-center bg-[#003415] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
+                            
+                      <button onclick="openMediaModal(['img/projects/greenpeace/img_greenpeace_ia.webp', 'img/projects/greenpeace/img_greenpeace_site.png'])" class="absolute bottom-4 left-4 w-12 h-12 flex items-center justify-center bg-[#dae1e5] rounded-full shadow-lg z-10">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
+                              <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                          </svg>
+                      </button>
+
+                      <a class="grid items-center justify-items-center" target="_blank" href="https://www.figma.com/design/Cg1l8qO0BGEUKXwMJDzrGL/Untitled?node-id=105-360&p=f">
+                          <h1 class="text-[80px] lg:text-[115px] text-white">Green</h1>
+                      </a>
+                    </div>
+  
+                  <!--description-->
+                  <div class="hidden md:block bg-[#dae1e5] rounded-3xl mt-2 p-5">
+  
+                    <a class="inline-flex items-center md:text-[16px]" target="_blank" href="https://www.figma.com/design/Cg1l8qO0BGEUKXwMJDzrGL/Untitled?node-id=105-360&p=f">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 15 15" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00005 2.04999H5.52505C4.71043 2.04999 4.05005 2.71037 4.05005 3.52499C4.05005 4.33961 4.71043 4.99999 5.52505 4.99999H7.00005V2.04999ZM7.00005 1.04999H8.00005H9.47505C10.842 1.04999 11.95 2.15808 11.95 3.52499C11.95 4.33163 11.5642 5.04815 10.9669 5.49999C11.5642 5.95184 11.95 6.66836 11.95 7.475C11.95 8.8419 10.842 9.95 9.47505 9.95C8.92236 9.95 8.41198 9.76884 8.00005 9.46266V9.95L8.00005 11.425C8.00005 12.7919 6.89195 13.9 5.52505 13.9C4.15814 13.9 3.05005 12.7919 3.05005 11.425C3.05005 10.6183 3.43593 9.90184 4.03317 9.44999C3.43593 8.99814 3.05005 8.28163 3.05005 7.475C3.05005 6.66836 3.43594 5.95184 4.03319 5.5C3.43594 5.04815 3.05005 4.33163 3.05005 3.52499C3.05005 2.15808 4.15814 1.04999 5.52505 1.04999H7.00005ZM8.00005 2.04999V4.99999H9.47505C10.2897 4.99999 10.95 4.33961 10.95 3.52499C10.95 2.71037 10.2897 2.04999 9.47505 2.04999H8.00005ZM5.52505 8.94998H7.00005L7.00005 7.4788L7.00005 7.475L7.00005 7.4712V6H5.52505C4.71043 6 4.05005 6.66038 4.05005 7.475C4.05005 8.28767 4.70727 8.94684 5.5192 8.94999L5.52505 8.94998ZM4.05005 11.425C4.05005 10.6123 4.70727 9.95315 5.5192 9.94999L5.52505 9.95H7.00005L7.00005 11.425C7.00005 12.2396 6.33967 12.9 5.52505 12.9C4.71043 12.9 4.05005 12.2396 4.05005 11.425ZM8.00005 7.47206C8.00164 6.65879 8.66141 6 9.47505 6C10.2897 6 10.95 6.66038 10.95 7.475C10.95 8.28962 10.2897 8.95 9.47505 8.95C8.66141 8.95 8.00164 8.29121 8.00005 7.47794V7.47206Z" fill="#000000"/>
+                      </svg>
+                      figma/greenpeace
+                    </a>
+  
+                    <p class="md:text-[16px]">Desenvolvimento do protótipo de um site institucional para uma ONG com foco em sustentabilidade. O projeto tem como objetivo conectar pessoas à causa ambiental, promovendo ações educativas em escolas sobre temas como sustentabilidade, conservação da biodiversidade e proteção dos oceanos, reforçando a educação como agente de transformação social.</p>
+                  </div>
+  
+                </div>
+
+                <!-- tafe -->
+                <div class="flex justify-center flex-col w-[65%] md:w-[50%] m-5 h-auto ">
+
+                    <!--image-->
+                    <div class="relative flex items-center justify-center bg-[#007af8] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
+                            
+                      <button onclick="openMediaModal(['img/projects/tafe/home.png', 'img/projects/tafe/contruction-accidents.png', 'img/projects/tafe/new-accident.png'])" class="absolute bottom-4 left-4 w-12 h-12 flex items-center justify-center bg-[#dae1e5] rounded-full shadow-lg z-10">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
+                              <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                          </svg>
+                      </button>
+
+                      <a class="grid items-center justify-items-center" target="_blank" href="https://snack.expo.dev/@smilofc/tafe_correto?platform=android">
+                          <h1 class="text-[80px] lg:text-[115px] text-white">Tafe</h1>
+                      </a>
+                    </div>
+  
+                  <!--description-->
+                  <div class="hidden md:block bg-[#dae1e5] rounded-3xl mt-2 p-5">
+  
+                    <a class="inline-flex items-center md:text-[16px]" target="_blank" href="https://snack.expo.dev/@smilofc/tafe_correto?platform=android">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 184 184">
+                        <circle fill="#FFF" stroke="#000" cx="159.53" cy="36.28" r="24.07" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        <path fill="#000" stroke="#000" d="M180.24,24a35.36,35.36,0,0,1-34.86,29.47c-.95,0-1.88,0-2.81-.12A24.07,24.07,0,0,0,180.24,24Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        <polygon stroke="#000" fill="#FFF" points="1.5 138.64 1.74 47.21 80.44 92.92 80.44 184.35 1.5 138.64" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        <polygon stroke="#000" fill="#FFF" points="1.74 47.21 80.56 1.5 119.9 24.36 80.44 47.21 119.9 70.07 80.44 92.92 1.74 47.21" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        <polygon fill="#000" stroke="#000" points="119.9 70.07 119.9 115.78 159.37 92.92 159.61 138.64 80.44 184.35 80.44 92.92 119.9 70.07" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        <polygon fill="#000" stroke="#000" points="119.9 24.36 119.9 70.07 80.44 47.21 119.9 24.36" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        <polygon stroke="#000" fill="#FFF" points="119.9 70.07 159.37 92.92 119.9 115.78 119.9 70.07" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        <line stroke="#000" fill="#FFF" x1="80.43" y1="139.91" x2="1.5" y2="94.2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        <polyline fill="none" stroke="#000" points="119.84 24.36 41.03 70.07 41.03 161.54" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        <line stroke="#000" fill="#FFF" x1="119.9" y1="70.07" x2="41.05" y2="24.41" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                      </svg>
+                      @smilofc/tafe
+                    </a>
+  
+                    <p class="md:text-[16px]">Aplicativo mobile voltado à segurança do trabalho na construção civil, o TAFE (Terminal de Anotação e Fiscalização de Eventos) veio com o objetivo de registrar e monitorar acidentes. A solução contribui para garantir os direitos dos trabalhadores e aumentar a transparência entre colaboradores e empresas.</p>
+                  </div>
+  
+                </div>
+
+                <!-- bookroom -->
+                <div class="flex justify-center flex-col w-[65%] md:w-[50%] m-5 h-auto ">
+
+                    <!--image-->
+                    <div class="relative flex items-center justify-center bg-[#007af8] rounded-3xl md:rounded-t-3xl h-[14rem] md:h-[20rem]">
+                            
+                      <button onclick="openMediaModal(['img/projects/bookroom/img_bookroon.jpeg'])" class="absolute bottom-4 left-4 w-12 h-12 flex items-center justify-center bg-[#dae1e5] rounded-full shadow-lg z-10">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
+                              <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                          </svg>
+                      </button>
+
+                      <a class="grid items-center justify-items-center" href="#">
+                          <h1 class="text-[80px] lg:text-[115px] text-white">Book</h1>
+                      </a>
+                    </div>
+  
+                  <!--description-->
+                  <div class="hidden md:block bg-[#dae1e5] rounded-3xl mt-2 p-5">
+  
+                    <a class="inline-flex items-center md:text-[16px] gap-1" href="#">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31A7.902 7.902 0 0 1 12 20zm6.31-3.1L7.1 5.69A7.902 7.902 0 0 1 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"></path>
+                      </svg>
+                      não disponível
+                    </a>
+  
+                    <p class="md:text-[16px]">O Bookroom é um sistema web para reserva de salas acadêmicas, desenvolvido para otimizar o processo de agendamento por professores. A plataforma permite consultar disponibilidade, realizar reservas e receber confirmações de forma rápida e intuitiva.</p>
                   </div>
   
                 </div>
@@ -472,5 +752,7 @@
     <script src="js/carrousel.js"></script>
     <!--js mobile menu-->
     <script src="js/mobile-menu.js"></script>
+    <!-- DOM das midias dos projetos que tem midias -->
+    <script src="js/media-dom.js"></script>
 </body>
 </html>
